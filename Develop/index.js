@@ -30,7 +30,26 @@ const questions = [{
     name: 'license',
     choices: ['MIT', 'Apache', 'None']
   },
-  
+  {
+    type: 'input',
+    message: 'What command should be run to install dependencies',
+    name: 'commandDepend',
+  },
+  {
+    type: 'input',
+    message: 'What command should be run to run tests?',
+    name: 'commandTest',
+  },
+  {
+    type: 'input',
+    message: 'What does the user need to know about using the repo?',
+    name: 'repoInfo',
+  },
+  {
+    type: 'input',
+    message: 'What does the user need to know about contributing to the repo?',
+    name: 'repoContrib',
+  },];
 
 
 inquirer
