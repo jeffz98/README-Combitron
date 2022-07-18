@@ -1,13 +1,8 @@
-# <Your-Project-Title>
+# Professional README Generator
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+My motivation to build this generator was to be able to quickly generate professional READMEs quickly and use my skills of Node.js and inquirer.js. This allows me to spend more time developing actual projects. I learned how to properly use Node.js and inquirer.js to prompt the user to answer questions and build a README in markdown using their answers.
 
 ## Table of Contents (Optional)
 

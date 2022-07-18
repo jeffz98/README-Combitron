@@ -51,15 +51,15 @@ const questions = [{
     name: 'repoContrib',
   },];
 
-
-// used inquirer to prompt the user to answer 
-inquirer
-.prompt(questions)
-.then((response) => {
-  console.log(response)
-// writing to file previously written markdown"
-    console.log('Generating README...')
-    writeToFile('README.md', 
+function init() {
+  // used inquirer to prompt the user to answer 
+  inquirer
+  .prompt(questions)
+  .then((response) => {
+    console.log(response)
+  // writing to file previously written markdown"
+      console.log('Generating README...')
+      writeToFile('README.md', 
     `
 # ${response.projname}  
 
@@ -100,9 +100,6 @@ License used: ${response.license}
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-
 ## Contributing
 
 How to contribute: ${response.repoContrib}
@@ -114,13 +111,15 @@ You can reach me here: ${response.email}
 
     `)
 
+  }
+  );
 }
-);
 
-// TODO: Create a function to write README file
+// function that writes README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, data)
 
 }
 
+init();
 
