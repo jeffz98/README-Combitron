@@ -57,10 +57,15 @@ inquirer
 .prompt(questions)
 .then((response) => {
   console.log(response)
-//   response.confirm === response.password
+// writing to file previously written markdown"
     console.log('Generating README...')
-    writeToFile('README.md', `
-    # ${response.projname}
+    writeToFile('README.md', 
+    `
+# ${response.projname}  
+
+## 
+
+![${response.license}](https://img.shields.io/badge/license-${response.license}-blue)
 
 ## Description
 
@@ -72,6 +77,8 @@ ${response.description}
 - [Usage](#usage)
 - [Test](#test)
 - [License](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
 ## Installation
 
@@ -85,28 +92,20 @@ To add a screenshot, create an "assets/images" folder in your repository and upl
 
 ## Test
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+This is the command to run test: ${response.commandTest}
 
 ## License
 
-${response.license}
+License used: ${response.license}
 
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
 
-![${response.license}](https://img.shields.io/badge/license-${response.license}-blue)
+## Contributing
 
-
-## How to Contribute
-
-${response.repoContrib}
+How to contribute: ${response.repoContrib}
 
 ## Questions
 
@@ -124,8 +123,4 @@ function writeToFile(fileName, data) {
 
 }
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
-init();
