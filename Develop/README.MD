@@ -1,9 +1,9 @@
 
-    # d
+    # XD
 
 ## Description
 
-d
+It is a project to show da read me
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ d
 
 ## Installation
 
-f
+d
 
 ## Usage
 
@@ -32,7 +32,7 @@ If you followed tutorials, include links to those here as well.
 
 ## License
 
-Apache
+MIT
 
 ---
 
@@ -40,16 +40,18 @@ Apache
 
 ## Badges
 
-![Apache](https://img.shields.io/badge/license-Apache-blue)
+![MIT](https://img.shields.io/badge/license-MIT-blue)
 
 Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
-## Features
-
-If your project has a lot of features, list them here.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+d
+
+## Questions
+
+https://github.com/jeffz98/
+You can reach me here: jeffz98@berkeley.edu
 
     

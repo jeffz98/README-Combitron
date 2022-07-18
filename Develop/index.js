@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// included packages needed
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 
-// TODO: Create an array of questions for user input
+// created an array of questions to prompt user
 const questions = [{
     type: 'input',
     message: 'What is your GitHub username?',
@@ -52,12 +52,13 @@ const questions = [{
   },];
 
 
+// used inquirer to prompt the user to answer 
 inquirer
 .prompt(questions)
 .then((response) => {
   console.log(response)
 //   response.confirm === response.password
-    console.log('Success!')
+    console.log('Generating README...')
     writeToFile('README.md', `
     # ${response.projname}
 
@@ -101,8 +102,6 @@ ${response.license}
 ## Badges
 
 ![${response.license}](https://img.shields.io/badge/license-${response.license}-blue)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 
 ## How to Contribute
