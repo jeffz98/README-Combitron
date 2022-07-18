@@ -32,7 +32,7 @@ const questions = [{
   },
   {
     type: 'input',
-    message: 'What command should be run to install dependencies',
+    message: 'What command should be run to install dependencies?',
     name: 'commandDepend',
   },
   {
@@ -82,21 +82,25 @@ ${response.description}
 
 ## Installation
 
+---
+
+To install necessary dependencies, run the following command:
+
+
 ${response.commandDepend}
+
 
 ## Usage
 
 ${response.repoInfo}
 
-To add a screenshot, create an "assets/images" folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
 ## Test
 
-This is the command to run test: ${response.commandTest}
+To run tests, use the command: ${response.commandTest}
 
 ## License
 
-License used: ${response.license}
+This project is licensed under the ${response.license} license.
 
 ---
 
